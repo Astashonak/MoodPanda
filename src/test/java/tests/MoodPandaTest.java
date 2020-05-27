@@ -13,4 +13,24 @@ public class MoodPandaTest extends BaseTest {
                 .updateMood(8)
                 .goToMyDiary();
     }
+
+    @Test(description = "Проверка смены аватарки")
+    public void changeAvatar(){
+        loginPage
+                .openPage()
+                .login("astashonak12@mailinator.com", "password12")
+                .openAvatar()
+                .chooseAvatarImage()
+                .verifyMessage("Success!");
+    }
+
+    @Test(description = "Проверка сохранения после внесений изменений в профиль")
+    public void saveEditFirstName(){
+        loginPage
+                .openPage()
+                .login("astashonak12@mailinator.com", "password12")
+                .openEditProfile()
+                .changeName("Princess")
+                .verifyMessage("Success!");
+    }
 }
