@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.Description;
 import org.testng.annotations.Test;
 
 public class MoodPandaTest extends BaseTest {
@@ -25,6 +26,7 @@ public class MoodPandaTest extends BaseTest {
     }
 
     @Test(description = "Проверка сохранения после внесений изменений в профиль")
+    @Description("Тест")
     public void saveEditFirstName(){
         loginPage
                 .openPage()

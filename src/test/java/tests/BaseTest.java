@@ -15,7 +15,7 @@ public class BaseTest {
 
 @BeforeMethod(description = "Открыть Chrome Driver")
     public void setupBrowser(){
-    Configuration.headless= false;
+    Configuration.headless= true;
     Configuration.startMaximized = true;
     Configuration.timeout = 20000;
     Configuration.browser = "chrome";
