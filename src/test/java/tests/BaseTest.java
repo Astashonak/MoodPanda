@@ -13,7 +13,7 @@ public class BaseTest {
 
     LoginPage loginPage;
 
-@BeforeMethod
+@BeforeMethod(description = "Открыть Chrome Driver")
     public void setupBrowser(){
     Configuration.headless= false;
     Configuration.startMaximized = true;

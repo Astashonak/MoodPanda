@@ -10,6 +10,7 @@ public class LoginPage extends BasePage {
 
     public LoginPage openPage() {
         open("https://moodpanda.com/Login/");
+        isPageOpen();
         return this;
     }
 
@@ -26,6 +27,5 @@ public class LoginPage extends BasePage {
         feedPage.isPageOpen();
         return feedPage;
     }
-
 }
 
